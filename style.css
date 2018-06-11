@@ -1,0 +1,316 @@
+body {
+	font-family: 'Poppins', sans-serif;
+	height: 3000px;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+li {
+	list-style: none;
+	display: flex;
+}
+
+a {
+	text-decoration: none;
+}
+
+header {
+	/* background: #9e9e9e; */
+	padding: 0 auto;
+}
+
+.header-container {
+	width: 89%;
+	margin: 0 auto;
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+}
+
+.header-container a {
+	color: #000;
+	font-size: 16px;
+	padding: 27px 6px;
+	margin-right: 63px;
+}
+
+.header-container a:hover {
+	border-bottom: 2px solid #4FC0DB;
+	padding: 25px 6px;
+	/* background: #4FC0DB; */
+}
+
+.logo img{
+	width: 120px;
+	height: 60px;
+	margin: 0 auto;
+}
+
+.posts img {
+	padding: 30px 0;
+	height: 300px;
+	width: 300px;
+}
+
+.cb /*#menu-checkbox */ {
+	display: none;
+}
+
+ul {
+	display: flex;
+}
+
+.top-container {
+	width: 85%;
+	margin: 0 auto;
+}
+
+.top-slide {
+	background: url(pictures/photo3.jpg) no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: 150%;
+	padding-top: 120px;
+	padding-bottom: 280px;
+}
+
+.top-slide :nth-child(2) {
+	margin-bottom: 10px;
+}
+
+.top-slide h2{
+	background: #4FC0DB;
+	display: inline;
+	font-size: 70px;
+	padding: 0 13px;
+}
+
+.top-slide p{
+	background: #8e8e8e;
+	display: inline;
+	font-size: 24px;
+	padding: 0 4px;
+	color: #fff;
+}
+
+.specialize-container {
+	width: 80%;
+	margin: 50px auto;
+	text-align: center;
+}
+
+.specialize-container h3 {
+	font-size: 35px;
+}
+
+.specialize-container p {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 24px;
+}
+
+.first-p {
+	font-size: 20px;
+	color: #fff;
+}
+
+.bottom-card {
+	margin-left: 10px;
+	padding: 10px;
+	background: #414146;
+	position: relative;
+	top: -10px;
+}
+
+.topcard img{
+	margin-left: 10px;
+	margin-top: 20px;
+	height: 155px;
+	width: 230px;
+}
+
+.specialize-cards {
+	display: flex;
+	justify-content: space-between;
+	margin-left: -25px;
+}
+
+.portfolio {
+	width: 90%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.portfolio h4 {
+	background: #424147;
+	font-size: 18px;
+	padding: 0 8px;
+	display: inline-block;
+	color: #4FC0DB;
+	margin-bottom: 30px;
+}
+
+.portfolio p {
+	color: #424146;
+	font-size: 16px;
+}
+
+.toggles button {
+	background: #fff;
+	border: 1px dotted #4FC0DB;
+	border-radius: 5px;
+	color: #424146;
+	cursor: pointer;
+	font-size: 16px;
+	margin: 20px 5px;
+	padding: 5px 5px;
+}
+
+.toggles button:after {
+	content: '';
+}
+
+.toggles button:last-child:after {
+	content: '';
+}
+
+.posts {
+	width: 90%;
+	display: grid;
+	grid-template-columns: auto auto auto;
+	margin: 0 auto;
+}
+
+.brand-slider {
+		width: 90%;
+		margin: 0 auto;
+		text-align: center;
+}
+	
+.brand-slider h4 {
+		margin-top: 40px;
+		background: #424147; /* change the color */
+		padding: 0 8px;
+		font-size: 18px;
+		display: inline-block;
+		color: #4FC0DB; /* change the color */
+		margin-bottom: 30px;
+}
+	
+.brand-slider p {
+		color: #424146;
+		font-size: 16px;
+		margin-bottom: 30px;
+}
+
+
+
+
+
+
+@media /* screen and */ (max-width: 420px) {
+	.header-container {
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+	}
+
+	.main-menu {
+		display: none;
+	}
+
+	.main-menu li{
+		width: 100%;
+		display: block;
+		font-size: 12px;
+	}
+
+	.main-menu a{
+		display: block;
+		padding: 8px;
+	}
+
+	.toggle-button {
+		text-align: center;
+		display: block;
+		cursor: pointer;
+		color: #000;
+		margin-top: 20px;
+	}
+
+	.toggle-button:after {
+		content: attr(data-open);
+		display: block;
+	}
+
+	#menu-checkbox:checked + nav[role="navigation"] .main-menu {
+		display: block;
+	}
+
+	#menu-checkbox:checked + nav[role="navigation"] .toggle-button:after {
+		content: attr(data-close);
+	}
+	
+	.top-slide {
+	background: url(pictures/photo3.jpg) no-repeat;
+	background-size: 250%;
+	background-attachment: fixed;
+	background-position: center;
+	padding-top: 120px;
+	padding-bottom: 280px;
+}
+
+	.header-container a{
+		margin-right: -65px;
+	}
+
+	.main-menu {
+		position: relative;
+		top: 30px;
+		right: 115px;
+	}
+	
+	.top-slide {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+	
+	.top-slide h2 {
+		font-size: 32px;
+	}
+	
+	.top-slide p {
+		font-size: 16px;
+	}
+	
+	.specialize-container p {
+		font-size: 16px;
+	}
+	
+	.specialize-cards {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	
+	.bottom-card {
+		width: 250px;
+		margin: 0 auto;
+	}
+	
+	.posts {
+		width: 90%;
+		display: grid;
+		margin: 0 auto;
+		grid-template-columns: auto;
+	}
+	
+	.toggles button {
+	font-size: 10px;
+	margin: 5px 5px;
+	padding: 5px 5px;
+	}
+}
